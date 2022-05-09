@@ -1,2 +1,6 @@
-# NoisyLanguages
-🔊 Noise map algorithm in every language
+![NoisyLanguages](https://github.com/NotReeceHarris/NotReeceHarris/blob/main/cdn/NoisyLanguages.png?raw=true)
+
+---
+
+## Languages
+- Python
