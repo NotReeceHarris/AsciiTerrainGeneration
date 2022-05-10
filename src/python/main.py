@@ -13,7 +13,7 @@ def skeletonChunk(size):
 if __name__ == "__main__":
     # Initialize the parameters
     seed = 26207806070
-    coords = [1459, 5429]
+    coords = [42, 12]
     size = [46, 19]
 
     ts = time.time() # Start the timer
