@@ -31,7 +31,7 @@
 > On the journey of expanding my knowledge, I decided to create procedural topography generation algorithms in every language possible. Topography generation is not a very common algorithm however it is a core element for a lot of data analytic and game map generation.
 
 ## Helpfull Research
-- [Michael McHugh talk on noise](https://www.youtube.com/watch?v=O33YV4ooHSo)
+- [Make some noise with Python and generate terrain (Michael McHugh)](https://www.youtube.com/watch?v=O33YV4ooHSo)
 - [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise)
 - [How Procedurally Generated Terrain Works](https://www.youtube.com/watch?v=JdYkcrW8FBg)
 - [A Parallel Algorithm Using Perlin Noise Superposition Method for Terrain
