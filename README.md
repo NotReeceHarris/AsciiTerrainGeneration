@@ -1,4 +1,4 @@
-# ⛰️ Procedural Topography Generation Algoriths
+# ⛰️ Procedural Terrain Generation Algoriths
 
 [![Ascii Output](https://github.com/NotReeceHarris/NotReeceHarris/blob/main/cdn/topo.png?raw=true)](https://tinyurl.com/yckkbd8w)
 <!--
