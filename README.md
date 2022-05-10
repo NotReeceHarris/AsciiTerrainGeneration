@@ -1,5 +1,7 @@
 # // ⛰️ Procedural Topography Generation Algorith
 
+![Ascii Output](https://github.com/NotReeceHarris/NotReeceHarris/blob/main/cdn/topoAsciiOutput.png?raw=true)
+<!--
 ```t
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ #######==========~~~~~~~~~~------------------- ┃  // Highest to Lowest
@@ -25,5 +27,5 @@
 ┃ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░░░░░░░░#########=== ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
-
+-->
 > On the journey of expanding my knowledge, I decided to create procedural topography generation algorithms in every language possible. Topography generation is not a very common algorithm however it is a core element for a lot of data analytic and game map generation.
