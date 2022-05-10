@@ -1,4 +1,4 @@
-# ⛰️ Procedural Topography Generation Algorith
+# ⛰️ Procedural Topography Generation Algoriths
 
 [![Ascii Output](https://github.com/NotReeceHarris/NotReeceHarris/blob/main/cdn/TopoTerminal.png?raw=true)](https://carbon.now.sh)
 <!--
