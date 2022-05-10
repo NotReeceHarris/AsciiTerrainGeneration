@@ -29,3 +29,7 @@
 ```
 -->
 > On the journey of expanding my knowledge, I decided to create procedural topography generation algorithms in every language possible. Topography generation is not a very common algorithm however it is a core element for a lot of data analytic and game map generation.
+
+## Help full data
+- [Michael McHugh talk on noise](https://www.youtube.com/watch?v=O33YV4ooHSo)
+- [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise)
