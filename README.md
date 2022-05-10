@@ -1,6 +1,6 @@
 # ⛰️ Procedural Topography Generation Algoriths
 
-[![Ascii Output](https://github.com/NotReeceHarris/NotReeceHarris/blob/main/cdn/TopoTerminalv3.png?raw=true)](https://tinyurl.com/52wrdkpr)
+[![Ascii Output](https://github.com/NotReeceHarris/NotReeceHarris/blob/main/cdn/TopoTerminalv3.png?raw=true)](https://tinyurl.com/3aswzkmy)
 <!--
 ```
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
