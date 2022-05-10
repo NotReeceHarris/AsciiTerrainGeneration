@@ -33,3 +33,4 @@
 ## Help full data
 - [Michael McHugh talk on noise](https://www.youtube.com/watch?v=O33YV4ooHSo)
 - [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise)
+- [How Procedurally Generated Terrain Works](https://www.youtube.com/watch?v=JdYkcrW8FBg)
