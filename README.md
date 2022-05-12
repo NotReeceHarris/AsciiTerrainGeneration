@@ -40,5 +40,7 @@ Generation Based on CUDA architecture](https://www.researchgate.net/profile/Huai
   - [Simplex noise wiki](https://en.wikipedia.org/wiki/Simplex_noise)
 - OpenSimplex noise
   - [OpenSimplex noise wiki](https://en.wikipedia.org/wiki/OpenSimplex_noise)
+  - [Procedural Environment Generation for Cave 3D Model Using OpenSimplex Noise and Marching Cube](https://ieeexplore.ieee.org/abstract/document/9297889)
+  - [Polynomial methods for fast procedural terrain generation](https://www.researchgate.net/profile/Yann-Thorimbert/publication/309037528_Polynomial_method_for_Procedural_Terrain_Generation/links/5c0659e492851c6ca1fc69fd/Polynomial-method-for-Procedural-Terrain-Generation.pdf)
 - Other
   - [Make some noise with Python and generate terrain (Michael McHugh)](https://www.youtube.com/watch?v=O33YV4ooHSo)
