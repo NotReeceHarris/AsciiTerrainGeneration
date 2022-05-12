@@ -1,5 +1,6 @@
 import time
 import random
+import hashlib
 
 # create a random noise map between 0 and 1 with size of (x, y) and seed
 def noiseMap(seed, size):
@@ -34,15 +35,17 @@ if __name__ == "__main__":
         if loopIndex == 1:
             print(f" ┃ // Settings")
         elif loopIndex == 2:
-            print(f" ┃ Seed    : {seed}")
+            print(f" ┃ Seed     : {seed}")
         elif loopIndex == 3:
-            print(f" ┃ Coords  : {coords}")
+            print(f" ┃ Coords   : {coords}")
         elif loopIndex == 5:
             print(f" ┃ // Algorithm Info")
         elif loopIndex == 6:
-            print(f" ┃ Time    : {ts} /ms")
+            print(f" ┃ Checksum : {hashlib.sha256(str(map).encode('utf-8')).hexdigest()}")
         elif loopIndex == 7:
-            print(f" ┃ Size    : {size}")
+            print(f" ┃ Time     : {ts} /ms")
+        elif loopIndex == 8:
+            print(f" ┃ Size     : {size}")
         else:
             print(f" ┃")
 
