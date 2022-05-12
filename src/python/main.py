@@ -1,27 +1,49 @@
 import time
+import random
 
-def skeletonChunk(size):
-    """
-    // This generates the structure of the chunk 
-    Args:
-        size (array): size of the chunk
-    Returns:
-        array: This is the skeleton structure of the chunk
-    """
-    return [[0] * size[1] for i in range(size[0])]
+# create a random noise map between 0 and 1 with size of (x, y) and seed
+def noiseMap(seed, size):
+    noise_map = []
+    random.seed(seed)
+    for i in range(size[1]):
+        noise_map.append([])
+        for j in range(size[0]):
+            noise_map[i].append(random.randint(0, 6))
+    return noise_map
 
 if __name__ == "__main__":
     # Initialize the parameters
     seed = 26207806070
-    coords = [42, 12]
-    size = [46, 19]
+    coords = (100, 100)
+    size = (60, 30)
 
     ts = time.time() # Start the timer
 
-    # Initialize the skeleton chunk
-    chunk = skeletonChunk(size)
+    map = noiseMap(seed, size)
 
-    ts = time.time() - ts # Stop the timer
+    ts = round((time.time() - ts) * 1000, 2) # Stop the timer
 
-    """ for i in range(len(chunk)):
-        print(chunk[i]) """
+    loopIndex = 0
+    print(f'┏{"━" * (size[0] + 2)}┓')
+    for x in map:
+        loopIndex += 1
+        print("┃ ", end="")
+        for i in x:
+            print(str(i).replace('0', '-').replace('1', '~').replace('2', '=').replace('3', '#').replace('4', '░').replace('5', '▒').replace('6', '▓'), end="")
+
+        if loopIndex == 1:
+            print(f" ┃ // Settings")
+        elif loopIndex == 2:
+            print(f" ┃ Seed    : {seed}")
+        elif loopIndex == 3:
+            print(f" ┃ Coords  : {coords}")
+        elif loopIndex == 5:
+            print(f" ┃ // Algorithm Info")
+        elif loopIndex == 6:
+            print(f" ┃ Time    : {ts} /ms")
+        elif loopIndex == 7:
+            print(f" ┃ Size    : {size}")
+        else:
+            print(f" ┃")
+
+    print(f'┗{"━" * (size[0] + 2)}┛')
