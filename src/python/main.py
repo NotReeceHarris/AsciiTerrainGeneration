@@ -15,7 +15,7 @@ def noiseMap(seed, size):
 if __name__ == "__main__":
     # Initialize the parameters
     seed = 26207806070
-    coords = (100, 100)
+    coords = (0, 0)
     size = (60, 30)
 
     ts = time.time() # Start the timer
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         elif loopIndex == 2:
             print(f" ┃ Seed     : {seed}")
         elif loopIndex == 3:
-            print(f" ┃ Coords   : {coords}")
+            print(f" ┃ Coords   : X: {coords[0]}, Y: {coords[1]}")
         elif loopIndex == 5:
             print(f" ┃ // Algorithm Info")
         elif loopIndex == 6:
@@ -45,7 +45,7 @@ if __name__ == "__main__":
         elif loopIndex == 7:
             print(f" ┃ Time     : {ts} /ms")
         elif loopIndex == 8:
-            print(f" ┃ Size     : {size}")
+            print(f" ┃ Size     : {size[0]} x {size[1]}")
         else:
             print(f" ┃")
 
