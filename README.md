@@ -38,7 +38,7 @@
 Generation Based on CUDA architecture](https://www.researchgate.net/profile/Huailiang-Li-2/publication/301431773_A_Parallel_Algorithm_Using_Perlin_Noise_Superposition_Method_for_Terrain_Generation_Based_on_CUDA_architecture/links/5d5900d245851545af4c2067/A-Parallel-Algorithm-Using-Perlin-Noise-Superposition-Method-for-Terrain-Generation-Based-on-CUDA-architecture.pdf)
 - Simplex noise
   - [Simplex noise wiki](https://en.wikipedia.org/wiki/Simplex_noise)
-- Opensimplex noise
-  - [Opensimplex noise wiki](https://en.wikipedia.org/wiki/OpenSimplex_noise)
+- OpenSimplex noise
+  - [OpenSimplex noise wiki](https://en.wikipedia.org/wiki/OpenSimplex_noise)
 - Other
   - [Make some noise with Python and generate terrain (Michael McHugh)](https://www.youtube.com/watch?v=O33YV4ooHSo)
