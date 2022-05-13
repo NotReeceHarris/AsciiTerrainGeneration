@@ -3,7 +3,6 @@ import random
 import hashlib
 
 class prng:
-
     def __init__(self, seed):
         self.seed = seed
         self.MT = [0 for i in range(624)]
@@ -20,6 +19,7 @@ class prng:
                 self.MT[i] = self.MT[(i + 397) % 624] ^ (y >> 1)
                 if y % 2 != 0:
                     self.MT[i] ^= 2567483615
+
     def rand(self, start = 0, end = 32):
         y = self.MT[self.index]
         y ^= y >> 11
@@ -31,14 +31,14 @@ class prng:
         return y
 
 
-def noiseMap(seed, size):
-    noise_map = []
-    rand = prng(seed)
-    for i in range(size[1]):
-        noise_map.append([])
-        for j in range(size[0]):
-            noise_map[i].append(str(rand.rand())[1])
-    return noise_map
+def noiseMap(sd, se):
+    nm = []
+    rand = prng(sd)
+    for i in range(se[1]):
+        nm.append([])
+        for j in range(se[0]):
+            nm[i].append(str(rand.rand())[1])
+    return nm
 
 def display(map, seed, coords, size, ts):
         loopIndex = 0
