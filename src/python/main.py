@@ -1,33 +1,33 @@
 import time
-import random
 import hashlib
 
 class prng:
     def __init__(self, seed):
-        self.seed = seed
-        self.MT = [0 for i in range(624)]
-        self.index = 0
-        self.bitmask_1 = (2 ** 32) - 1
-        self.bitmask_2 = 2 ** 31
-        self.bitmask_3 = (2 ** 31) - 1
-        self.MT[0] = self.seed
-        for i in range(1,624):
-            self.MT[i] = ((1812433253 * self.MT[i-1]) ^ ((self.MT[i-1] >> 30) + i)) & self.bitmask_1
-        if self.index == 0:
-            for i in range(624):
-                y = (self.MT[i] & self.bitmask_2) + (self.MT[(i + 1 ) % 624] & self.bitmask_3)
-                self.MT[i] = self.MT[(i + 397) % 624] ^ (y >> 1)
-                if y % 2 != 0:
-                    self.MT[i] ^= 2567483615
+        self.s = seed
+        self.m = [0 for i in range(624)]
+        self.i = 0
+        self.bm1 = (2 ** 32) - 1
+        self.bm2 = 2 ** 31
+        self.bm3 = (2 ** 31) - 1
+        self.m[0] = self.s
 
-    def rand(self, start = 0, end = 32):
-        y = self.MT[self.index]
+        for x in range(1,624):
+            self.m[x] = ((1812433253 * self.m[x-1]) ^ ((self.m[x-1] >> 30) + x)) & self.bm1
+        if self.i == 0:
+            for x in range(624):
+                y = (self.m[x] & self.bm2) + (self.m[(x + 1 ) % 624] & self.bm3)
+                self.m[x] = self.m[(x + 397) % 624] ^ (y >> x)
+                if y % 2 != 0:
+                    self.m[x] ^= 2567483615
+                    
+    def rand(self):
+        y = self.m[self.i]
         y ^= y >> 11
         y ^= (y << 7) & 2636928640
         y ^= (y << 15) & 4022730752
         y ^= y >> 18
 
-        self.index = (self.index + 1) % 624
+        self.i = (self.i + 1) % 624
         return y
 
 
