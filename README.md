@@ -44,3 +44,4 @@ Generation Based on CUDA architecture](https://www.researchgate.net/profile/Huai
   - [Polynomial methods for fast procedural terrain generation](https://www.researchgate.net/profile/Yann-Thorimbert/publication/309037528_Polynomial_method_for_Procedural_Terrain_Generation/links/5c0659e492851c6ca1fc69fd/Polynomial-method-for-Procedural-Terrain-Generation.pdf)
 - Other
   - [Make some noise with Python and generate terrain (Michael McHugh)](https://www.youtube.com/watch?v=O33YV4ooHSo)
+  - [Interpolation](https://en.wikipedia.org/wiki/Interpolation)
