@@ -1,6 +1,5 @@
 import time
 import hashlib
-import random
 
 class prng:
     def __init__(self, seed):
@@ -102,7 +101,7 @@ def display(map, seed, coords, size, ts, intensity):
 
 if __name__ == "__main__":
     # Initialize the parameters
-    seed = random.randint(-10000000000, 10000000000)
+    seed = prng(int(time.time() * 1000)).rand()
     coords = (0, 0)
     size = (80, 40)
     intensity = 3
