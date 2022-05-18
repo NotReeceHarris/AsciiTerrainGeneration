@@ -21,8 +21,6 @@ def interpolate(map, intensity):
                     map[x][y] = map[x][y]
                 else:
                     map[x][y] = (map[x - 1][y] + map[x + 1][y]) / 2
-        for x in range(len(map)):
-            for y in range(len(map[x])):
                 if y == 0:
                     map[x][y] = map[x][y]
                 elif y == len(map[x]) - 1:
